@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-gqqi
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-user-workloads-stage/jhutar-tenant/my-app/devfile-sample-gqqi@sha256:ee0237ce9491d9f637464cc7b6b43fb397ed2ad9d2c8e0562bd42feca7db9d38
+        name: container-image
+        resources: {}
+status: {}
